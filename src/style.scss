@@ -3,56 +3,61 @@
 @tailwind utilities;
 
 #app {
-	font-family: Avenir, Helvetica, Arial, sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	text-align: center;
-	color: #2c3e50;
-	margin-top: 60px;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+}
+
+* {
+	@apply focus:outline-none focus:ring-2;
 }
 
 .card {
-	@apply rounded bg-slate-700 cursor-pointer overflow-hidden shadow;
-	div {
-		@apply p-8 flex items-center gap-2 transition-all;
-	}
-	svg {
-		@apply text-blue-300 transition-all min-w-max;
-	}
+    @apply rounded bg-slate-700 cursor-pointer overflow-hidden shadow transition-all;
+    div {
+        @apply p-8 flex items-center gap-2 transition-all;
+    }
+    svg {
+        @apply transition-all min-w-max bg-clip-text text-blue-300;
+    }
 
-	&:hover {
-		div {
-			@apply bg-white text-gray-800 font-semibold gap-3;
-		}
-		svg {
-			@apply text-blue-600;
-		}
-		.feather-youtube {
-			@apply text-red-600;
-		}
-		.feather-book {
-			@apply text-green-600;
-		}
-		.feather-github {
-			@apply text-black;
-		}
-	}
+    &:hover {
+		@apply scale-105 shadow-lg;
+        div {
+            @apply bg-white text-gray-800 font-semibold gap-3 scale-105;
+        }
+        svg {
+            @apply text-blue-600;
+        }
+        .feather-youtube {
+            @apply text-red-600;
+        }
+        .feather-book {
+            @apply text-green-600;
+        }
+        .feather-github {
+            @apply text-black;
+        }
+    }
 
-	&.disabled {
-		div {
-			@apply bg-slate-700 text-gray-600 font-semibold gap-3;
-		}
-		svg {
-			@apply text-gray-600;
-		}
-		.feather-youtube {
-			@apply text-gray-600;
-		}
-		.feather-book {
-			@apply text-gray-600;
-		}
-		.feather-github {
-			@apply text-gray-600;
-		}
-	}
+    &.disabled {
+        div {
+            @apply bg-slate-700 text-gray-600 font-semibold gap-3;
+        }
+        svg {
+            @apply text-gray-600;
+        }
+        .feather-youtube {
+            @apply text-gray-600;
+        }
+        .feather-book {
+            @apply text-gray-600;
+        }
+        .feather-github {
+            @apply text-gray-600;
+        }
+    }
 }

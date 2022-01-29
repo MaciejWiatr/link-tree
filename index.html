@@ -41,28 +41,31 @@
 			content="https://maciejwiatr.pl/cover.png"
 		/>
 	</head>
-	<body class="w-full h-full bg-gray-800">
+	<body class="w-full h-full min-h-screen bg-gray-800">
 		<header class="relative">
-			<div class="relative h-48 w-full">
+			<div class="relative w-full h-48">
 				<img
-					class="h-48 w-full object-cover object-center brightness-120"
-					src="/bg.jpg"
+					class="object-cover object-center w-full h-48 brightness-120"
+					alt="mountains background"
+					src="/bg.webp"
 				/>
 			</div>
 			<div class="h-20">
 				<img
-					class="relative mx-auto -top-16 w-36 h-36 rounded-full border-8 border-gray-800"
-					src="/me.jpg"
+					class="relative mx-auto border-8 border-gray-800 rounded-full -top-16 w-36 h-36"
+					alt="Maciej Wiatr on a neon gradient background"
+					src="/profile-pic.png"
 				/>
 			</div>
-			<h1 class="mx-auto text-center text-lg text-white font-semibold">
+			<h1 class="mx-auto text-lg font-semibold text-center text-white">
 				Maciej Wiatr
 			</h1>
-			<p class="text-center text-gray-400 italic text-sm">
+			<p class="text-sm italic text-center text-gray-400">
 				Fullstack developer
 			</p>
+			
 		</header>
-		<main class="flex justify-center">
+		<main class="flex flex-col items-center justify-between h-full">
 			<section
 				class="grid grid-cols-2 gap-4 p-4 max-w-lg w-full md:mx-[10vw] text-white"
 			>
@@ -170,6 +173,11 @@
 				</a>
 			</section>
 		</main>
+		<div class="fixed bottom-0 flex items-center justify-center w-full mb-10 text-sm text-center text-slate-200 md:mt-36">
+			<p class="relative p-2 pl-4 pr-4 rounded shadow bg-slate-700">
+				Contact: maciej.wiatr00@gmail.com
+			</p>
+		</div>
 		<script type="module" src="/src/main.ts"></script>
 	</body>
 </html>

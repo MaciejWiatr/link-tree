@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vite App</title>
+	</head>
+	<body class="w-full h-full bg-gray-800">
+		<header class="relative">
+			<div class="relative h-48 w-full">
+				<img
+					class="h-48 w-full object-cover object-center brightness-120"
+					src="/bg.jpg"
+				/>
+			</div>
+			<div class="h-20">
+				<img
+					class="relative mx-auto -top-16 w-36 h-36 rounded-full border-8 border-gray-800"
+					src="/me.jpg"
+				/>
+			</div>
+			<h1 class="mx-auto text-center text-lg text-white font-semibold">
+				Maciej Wiatr
+			</h1>
+			<p class="text-center text-gray-400 italic text-sm">
+				Fullstack developer
+			</p>
+		</header>
+		<main class="flex justify-center">
+			<section
+				class="grid grid-cols-2 gap-4 p-4 max-w-lg w-full md:mx-[10vw] text-white"
+			>
+				<a
+					href="https://linkedin.com/in/maciej-wiatr"
+					target="_blank"
+					class="card"
+				>
+					<div>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="18"
+							height="18"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="1.25"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							class="feather feather-linkedin"
+						>
+							<path
+								d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+							></path>
+							<rect x="2" y="9" width="4" height="12"></rect>
+							<circle cx="4" cy="4" r="2"></circle>
+						</svg>
+						<p>LiknedIn</p>
+					</div>
+				</a>
+				<a
+					href="https://github.com/MaciejWiatr"
+					target="_blank"
+					class="card"
+				>
+					<div>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="18"
+							height="18"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="1.25"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							class="feather feather-github"
+						>
+							<path
+								d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+							></path>
+						</svg>
+						<p>GitHub</p>
+					</div>
+				</a>
+				<a
+					href="https://github.com/MaciejWiatr"
+					target="_blank"
+					class="card"
+				>
+					<div>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="1.25"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							class="feather feather-book"
+						>
+							<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+							<path
+								d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+							></path>
+						</svg>
+						<p>Blog</p>
+					</div>
+				</a>
+				<a target="_blank" class="card disabled">
+					<div>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="1.25"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							class="feather feather-youtube"
+						>
+							<path
+								d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"
+							></path>
+							<polygon
+								points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"
+							></polygon>
+						</svg>
+						<p>YouTube</p>
+					</div>
+				</a>
+			</section>
+		</main>
+		<script type="module" src="/src/main.ts"></script>
+	</body>
+</html>
